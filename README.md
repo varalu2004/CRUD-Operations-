@@ -82,4 +82,4 @@ To run this project, you need to have the following installed:
    git clone (https://github.com/varalu2004/CRUD-Operations)
 2. **To get Index Page**:
    ```bash
-     (https://varalu2004.github.io/CRUD_Operations/frontend/index.html)
+   Index page  (https://varalu2004.github.io/CRUD_Operations/frontend/index.html)
