@@ -25,7 +25,40 @@ This is a user management web application with a backend API that handles CRUD (
 - Update user details directly from the table.
 - Delete users from the database.
 - Responsive design to ensure compatibility across devices.
+## Setup and Run Instructions
 
+### Step 1: Clone or Download the Project
+
+1. Clone the repository from GitHub:
+
+   ```bash
+   git clone (https://github.com/varalu2004/CRUD-Operations)
+### Step 2. Set Up the Database
+ 1.Start Apache and MySQL from the XAMPP Control Panel.
+ 2.Open phpMyAdmin in your browser.
+
+3.Create a new database:
+ Go to the Databases tab.
+ Enter a database name, e.g., user_management, and click Create.
+4.Import the SQL file to set up tables:
+
+ Select your new database from the sidebar.
+ Click Import at the top.
+ Click Choose File, select the database.sql file located in the backend folder of your project, 
+ then click Go to import.
+### Step 3: Configure Frontend API URL
+Open app.js located in the frontend folder.
+Update the API_URL to match your local server setup:
+const API_URL = 'http://localhost/user-management-app/backend/index.php';
+### Step 4: Run the Application
+http://localhost/user-management-app/frontend/index.html
+### Step 5: Test the Application
+#### Add User: 
+Use the form to add a new user by filling in the name, email, and date of birth, then click Add User.
+#### Update User:
+Click the Update button next to a user to modify their details.
+#### Delete User: 
+Click the Delete button next to a user to remove them from the database.
 ## Prerequisites
 
 To run this project, you need to have the following installed:
@@ -46,7 +79,7 @@ To run this project, you need to have the following installed:
 
 1. **Clone the repository**:
    ```bash
-   [git clone https://github.com/your-username/your-repo-name.git](https://github.com/varalu2004/CRUD-Operations)
+   git clone (https://github.com/varalu2004/CRUD-Operations)
 2. **To get Index Page**:
    ```bash
      (https://varalu2004.github.io/CRUD_Operations/frontend/index.html)
