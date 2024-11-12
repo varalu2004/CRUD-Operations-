@@ -1,0 +1,148 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    font-size: 16px;
+   
+}
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+   text-align: center;
+}
+
+/* Form Section Styles */
+.form-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.user-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: grid;
+    gap: 15px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.user-form input, .user-form button {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.user-form button {
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.user-form button:hover {
+    background-color: #2980b9;
+}
+
+/* Button for Fetch Users */
+.fetch-users-btn {
+    background-color: #16a085;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.fetch-users-btn:hover {
+    background-color: #1abc9c;
+}
+
+/* Table Section Styles */
+.users-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.users-section th, .users-section td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.users-section th {
+    background-color: #3498db;
+    color: white;
+}
+
+.users-section tr:nth-child(even) {
+    background-color: #ecf0f1;
+}
+.update-btn{
+    margin-right:20px;
+}
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .user-form {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .fetch-users-btn {
+        width: 100%;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    .users-section th, .users-section td {
+        padding: 8px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .user-form {
+        width: 100%;
+    }
+
+    .fetch-users-btn {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
